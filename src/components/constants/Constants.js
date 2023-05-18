@@ -1,7 +1,8 @@
-// for size
-export const SIZES = value => {
-  return wp(value / 4.2);
-};
+import {Dimensions} from 'react-native';
+
+const {height, width} = Dimensions.get('window');
+export const setHeight = h => (height / 100) * h;
+export const setWidth = w => (width / 100) * w;
 
 // for colors
 export const COLORS = {
@@ -49,4 +50,17 @@ export const IMAGES = {
   MARKER: require('../../assets/images/constantImages/marker.png'),
   EMPTY_CART: require('../../assets/images/constantImages/empty_cart.png'),
   AVATAR: require('../../assets/images/constantImages/user_avatar.png'),
+};
+
+// for fonts
+export const FONTS = {
+  POPPINS_BLACK: 'Poppins-Black',
+  Poppins_Bold: 'Poppins-Bold.ttf',
+  Poppins_ExtraBold: 'Poppins-ExtraBold.ttf',
+  Poppins_ExtraLight: 'Poppins-ExtraLight.ttf',
+  Poppins_Light: 'Poppins-Light.ttf',
+  Poppins_Medium: 'Poppins-Medium.ttf',
+  Poppins_Regular: 'Poppins-Regular.ttf',
+  Poppins_SemiBold: 'Poppins-SemiBold.ttf',
+  Poppins_Thin: 'Poppins-Thin.ttf',
 };
