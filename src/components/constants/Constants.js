@@ -1,4 +1,13 @@
 import {Dimensions} from 'react-native';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
+
+export const SIZES = {
+  wp: wp,
+  hp: hp,
+};
 
 const {height, width} = Dimensions.get('window');
 export const setHeight = h => (height / 100) * h;
@@ -55,12 +64,12 @@ export const IMAGES = {
 // for fonts
 export const FONTS = {
   POPPINS_BLACK: 'Poppins-Black',
-  Poppins_Bold: 'Poppins-Bold.ttf',
-  Poppins_ExtraBold: 'Poppins-ExtraBold.ttf',
-  Poppins_ExtraLight: 'Poppins-ExtraLight.ttf',
-  Poppins_Light: 'Poppins-Light.ttf',
-  Poppins_Medium: 'Poppins-Medium.ttf',
-  Poppins_Regular: 'Poppins-Regular.ttf',
-  Poppins_SemiBold: 'Poppins-SemiBold.ttf',
-  Poppins_Thin: 'Poppins-Thin.ttf',
+  Poppins_Bold: 'Poppins-Bold',
+  Poppins_ExtraBold: 'Poppins-ExtraBold',
+  Poppins_ExtraLight: 'Poppins-ExtraLight',
+  Poppins_Light: 'Poppins-Light',
+  Poppins_Medium: 'Poppins-Medium',
+  Poppins_Regular: 'Poppins-Regular',
+  Poppins_SemiBold: 'Poppins-SemiBold',
+  Poppins_Thin: 'Poppins-Thin',
 };

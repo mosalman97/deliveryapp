@@ -2,6 +2,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
 // screens
+import WelcomeScreen from '../screens/welcome/WelcomeScreen';
 import SplashScreen from '../screens/SplashScreen';
 
 // packages
@@ -13,7 +14,8 @@ const Navigation = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="Splashscreen" component={SplashScreen} />
+        <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
+        {/* <Stack.Screen name="SplashScreen" component={SplashScreen} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
