@@ -110,7 +110,10 @@ const WelcomeScreen = () => {
                   onPress={handleSkip}>
                   <Text style={styles.skipText}>Skip</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.nextView} onPress={handleNext}>
+                <TouchableOpacity
+                  style={styles.nextView}
+                  onPress={handleNext}
+                  activeOpacity={0.8}>
                   <Text style={styles.nextText}>next</Text>
                 </TouchableOpacity>
               </View>
